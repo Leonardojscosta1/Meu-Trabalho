@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background-image: url(https://st.depositphotos.com/1915959/3081/v/450/depositphotos_30810581-stock-illustration-dog-paws-seamless-pattern.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 50px;
+}
+
+.pesquisa {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+#racaNome {
+    width: 300px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid darkblue;
+}
+
+#btnBuscar {
+    width: 140px;
+    padding: 12px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#btnBuscar:hover {
+    background-color: royalblue;
+}
+
+.cartao-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.cartao {
+    width: 320px;
+    text-align: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: white;
+    margin: 20px;
+    padding: 15px;
+}
+
+.cartao img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.cartao h2 {
+    color: darkblue;
+    margin: 1.5rem 0;
+    font-size: 22px;
+}
