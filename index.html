@@ -6,6 +6,7 @@
     <title>Buscador de Cachorros</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="https://svgsilh.com/png-1024/306277.png" type="image/x-icon">
+    <link rel="manifest" href="/manifest.json">
 </head>
 <body>
     <div class="pesquisa">
@@ -20,5 +21,16 @@
     </div>
 
     <script src="script.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/service-worker.js')
+            .then((registration) => {
+              console.log('Service Worker registrado com sucesso:', registration);
+            })
+            .catch((error) => {
+              console.log('Falha ao registrar o Service Worker:', error);
+            });
+        }
+      </script>
 </body>
 </html>
